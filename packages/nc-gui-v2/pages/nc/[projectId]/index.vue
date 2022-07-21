@@ -33,7 +33,8 @@ watch(
     </template>
 
     <v-container fluid>
-      <DashboardTabView />
+      <!--      <DashboardTabView /> -->
+      <NuxtPage />
     </v-container>
   </NuxtLayout>
 </template>
