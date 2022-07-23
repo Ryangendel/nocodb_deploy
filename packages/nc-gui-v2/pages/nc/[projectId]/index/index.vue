@@ -17,7 +17,7 @@ const tableCreateDialog = ref(false)
     </v-tabs> -->
 
     <a-tabs v-model:activeKey="activeTab" size="small" type="editable-card" @edit="closeTab">
-      <a-tab-pane v-for="(tab, i) in tabs" :key="i" :tab="tab.title"  />
+      <a-tab-pane v-for="(tab, i) in tabs" :key="i" :tab="tab.title" />
     </a-tabs>
 
     <NuxtPage />
