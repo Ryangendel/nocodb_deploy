@@ -10,6 +10,20 @@ export default () => {
   const tabs = useState<TabItem[]>('tabs', () => [])
   const activeTab = useState<number>('activeTab', () => 0)
 
+  const route = useRoute()
+  const router = useRouter()
+
+
+  watchEffect(() => {
+    debugger
+    if (route.params.title) {
+      const tab = tabs.value.find(t => t.id === route.params.tab)
+      if (tab) {
+        activeTab.value = tabs.value.indexOf(tab)
+      }
+    }
+  })
+
   const addTab = (tabMeta: TabItem) => {
     const tabIndex = tabs.value.findIndex((tab) => tab.id === tabMeta.id)
     // if tab already found make it active
