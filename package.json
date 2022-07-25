@@ -13,6 +13,7 @@
     "xlsx": "^0.17.4"
   },
   "scripts": {
+    "start": "npm run build:common ; cd ./packages/nc-gui; npm install ../nocodb-sdk; npm install; npm run dev",
     "build:common": "cd ./packages/nocodb-sdk; npm install; npm run build",
     "install:common": "cd ./packages/nocodb; npm install ../nocodb-sdk; cd ../nc-gui; npm install ../nocodb-sdk",
     "start:api": "npm run build:common ; cd ./packages/nocodb; npm install ../nocodb-sdk; npm install; NC_DISABLE_CACHE=true NC_DISABLE_TELE=true npm run watch:run:cypress",

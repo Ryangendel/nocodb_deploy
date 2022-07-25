@@ -77,7 +77,7 @@ Turns any MySQL, PostgreSQL, SQL Server, SQLite & MariaDB into a smart-spreadshe
 
 ## 1-Click Deploy to Heroku
 
-Before doing so, make sure you have a Heroku account. By default, an add-on Heroku Postgres will be used as meta database. You can see the connection string defined in `DATABASE_URL` by navigating to Heroku App Settings and selecting Config Vars.
+THIS IS A NEW BRANCH... Before doing so, make sure you have a Heroku account. By default, an add-on Heroku Postgres will be used as meta database. You can see the connection string defined in `DATABASE_URL` by navigating to Heroku App Settings and selecting Config Vars.
 
 <a href="https://heroku.com/deploy?template=https://github.com/nocodb/nocodb-seed-heroku">
     <img 
